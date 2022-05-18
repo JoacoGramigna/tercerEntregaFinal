@@ -1,0 +1,78 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+.containerCarousel{
+    @include carousel;
+    img{
+        @include img-carosuel;
+    }
+}
+
+.tituloCard1{
+    @include titulo-card;
+    h1{
+        @include texto-card;
+    }
+}
+
+.containerCards1{
+    @include card-flex;
+    .card{
+        @include espacio-alrededor;
+        img{
+            @include card-img;
+        }
+    }
+}
+
+.containerCards1{
+    .card{
+        &:hover{
+            @include cursor-click;
+        }
+    }
+}
+
+.tituloCard2{
+    @include titulo-card;
+    h1{
+        @include texto-card;
+    }
+}
+
+.logosMarcas{
+    @include marcas;
+    img{
+        &:hover{
+            @include cursor-click
+        }
+    }
+}
+
+.containerCards2{
+    @include card-flex;
+    .card{
+        @include espacio-alrededor;
+        img{
+            @include card-img;
+        }
+    }
+}
+
+.containerCards2{
+    .card{
+        &:hover{
+            @include cursor-click;
+        }
+    }
+}
+
+.tituloPagos{
+    h1{
+        @include titulo-pagos;
+    }
+}
+
+.logosPagos{
+    @include logos-pagos;
+}

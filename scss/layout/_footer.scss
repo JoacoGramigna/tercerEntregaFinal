@@ -1,0 +1,81 @@
+@import "../variables/variables";
+@import "../abstracts/extend";
+
+.navFooterAcordeon {
+    display: none;
+}
+
+.gridContainerFooter{
+    @extend .footer-grid;
+    background-color: $color-primary;
+}
+
+.navFooter{
+    @extend .footer-nav;
+    h2{
+        @extend .titulos;
+    }
+}
+
+.institucional a{
+    @extend .decoracion-enlaces;
+}
+
+.datosInstitucionales{
+    @extend .columna-datos;
+    a{
+        @extend .enlaces;
+        &:hover{
+            @extend .enlaces-after;
+        }
+    }
+}
+
+.ayuda a{
+    @extend .decoracion-enlaces;
+}
+
+.datosAyuda{
+    @extend .columna-datos;
+    a{
+        @extend .enlaces;
+        &:hover{
+            @extend .enlaces-after;
+        }
+    }
+}
+
+.redesSociales a{
+    @extend .decoracion-enlaces;
+}
+
+.datosRedesSociales{
+    @extend .columna-datos;
+    a{
+        @extend .enlaces;
+        &:hover{
+            @extend .enlaces-after;
+        }
+    }
+}
+
+.atencionAlCliente a{
+    @extend .decoracion-enlaces;
+}
+
+.datosAtencionAlCliente{
+    @extend .columna-datos;
+    a{
+        @extend .enlaces;
+        &:hover{
+            @extend .enlaces-after;
+        }
+    }
+}
+
+.botonTop{
+    @extend .boton;
+    .fa-solid{
+        @extend .edit-boton;
+    }
+}

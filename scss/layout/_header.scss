@@ -1,0 +1,33 @@
+@import "../variables/variables";
+@import "../abstracts/map";
+
+.logoHeader{
+    display: map-get($logo, flexibilizar);
+    justify-content: map-get($logo, centrar);
+    img{
+        width: map-get($logo, ancho);
+        height: map-get($logo, largo);
+        margin-bottom: map-get($logo, espacio-abajo);
+        margin-top: map-get($logo, espacio-arriba);
+    }
+}
+
+.edit-nav{
+    background-color: $color-primary;
+}
+
+.dropdown-menu{
+    background-color: $color-primary;
+    .dropdown-menu i{
+        padding-right: map-get($barra-nav, espacio-derecha);
+        .dropdown-menu a:hover{
+            background-color: map-get($barra-nav, transparentar);
+            text-decoration: map-get($barra-nav, sub-rayar);
+        }
+    }
+}
+
+.btn{
+    color: $color-secondary;
+    outline: map-get($barra-nav, linea-alrededor);
+}

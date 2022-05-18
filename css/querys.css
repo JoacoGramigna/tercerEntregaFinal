@@ -1,0 +1,52 @@
+@media screen and (max-width: 991px) {
+    .navFooter{
+        display: none;
+    }
+    .gridContainerFooter {
+        display: unset;
+    }
+    .navFooterAcordeon{
+        display: unset;
+    }
+    .accordion-item{
+        background-color: #FBE3D9;
+    }
+    .accordion-button{
+        background-color: #FBE3D9;
+    }
+    .accordion-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .accordion-body a{
+        text-decoration: none;
+        color: #5C5D60;
+        margin: 3px;
+    }
+    .accordion-body a:hover{
+        text-decoration: underline;
+    }
+    .ayuda{
+        grid-area: ayuda;
+    }
+    .atencionAlCliente{
+        grid-area: atencionAlCliente;
+    }
+    .redesSociales{
+        grid-area: redesSociales;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .redesSociales h2{
+        display: none;
+    }
+    .botonTop{
+        display: none;
+    }
+    .formularioContactoDatos {
+        grid-template-areas: 
+        "datosIzquierda"
+        "datosDerecha"
+        "datosCheckbox";
+    }
+}

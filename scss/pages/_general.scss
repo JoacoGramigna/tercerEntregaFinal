@@ -1,0 +1,285 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+.botonVolver{
+    @include boton-volver;
+        a{
+            color: #5C5D60;
+            font-size: 18px;
+        }
+}
+
+.botonVolver:hover{
+    text-decoration: underline;
+}
+
+.tituloPags {
+    @include titulo-paginas;
+}
+
+/* Carrito */
+
+.bolsaCarrito {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.textoCarrito {
+    text-align: center;
+    margin-bottom: 140px;
+    margin-top: -20px;
+}
+
+/* micuenta.html */
+.tituloForm {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.cajaContacto {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.contacto {
+    background-color: #FBE3D9;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.form-check-label a {
+    color: #5C5D60;
+}
+
+.btn {
+    color: #5C5D60;
+}
+
+/* contactoviaemail.html */
+
+.formularioContactoDatos {
+    display: grid;
+    grid-template-areas:
+        "datosIzquierda datosDerecha"
+        "datosCheckbox datosCheckbox";
+    gap: 20px;
+    background-color: #FBE3D9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.datosIzquierda {
+    grid-area: datosIzquierda;
+}
+
+.datosIzquierda input {
+    outline: none;
+    background: transparent;
+    border: none;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #5C5D60;
+    padding-bottom: 10px;
+    font-size: 15px;
+    width: 300px;
+}
+
+.datosDerecha {
+    grid-area: datosDerecha;
+}
+
+.datosDerecha input {
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #5C5D60;
+    padding-bottom: 10px;
+    font-size: 15px;
+    width: 300px;
+}
+
+.botonEnviarCorreo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.botonEnviarCorreo button {
+    cursor: pointer;
+    background: #FBE3D9;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 10px 40px 10px 40px;
+}
+
+/* preguntasfrecuentes.html */
+
+.preguntasDestacadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.preguntasDestacadas div {
+    margin: 20px;
+}
+
+.parrafoInfo {
+    margin: 60px;
+}
+
+/* politicasdeprivacidad.html */
+
+.parrafoPoliticas p {
+    margin: 60px;
+}
+
+/* terminosycondiciones.html */
+
+.parrafoTerminos p {
+    margin: 60px;
+}
+
+/* pagosypromociones.html */
+.containerPagos {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
+.containerGridPagos {
+    display: grid;
+    grid-template-areas:
+        "tituloCredito"
+        "credito"
+        "tituloDebito"
+        "debito"
+        "tituloMercadoPago"
+        "mercadoPago";
+    gap: 40px;
+}
+
+.tituloCredito {
+    grid-area: tituloCredito;
+}
+
+.credito {
+    grid-area: credito;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloDebito {
+    grid-area: tituloDebito;
+}
+
+.debito {
+    grid-area: debito;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloMercadoPago {
+    grid-area: tituloMercadoPago;
+}
+
+.mercadoPago {
+    grid-area: mercadoPago;
+    display: flex;
+}
+
+.containerPagos img {
+    width: 200px;
+    height: 150px;
+}
+
+/* newin.html */
+.containerGridnewin {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        "filtroArticulos articulos"
+        "filtroArticulos articulos"
+        "filtroArticulos articulos"
+        "paginasNum paginasNum";
+}
+
+.filtroArticulos {
+    grid-area: filtroArticulos;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.filtroArticulos div {
+    margin: 20px 0px 20px 20px;
+}
+
+.tituloFiltro {
+    background-color: #FBE3D9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.columnaIndumentarias {
+    background-color: #FBE3D9;
+    border-radius: 20px;
+}
+
+.columnaIndumentarias div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtroArticulos p {
+    margin-top: 20px;
+}
+
+.filtroArticulos p:hover {
+    cursor: pointer;
+}
+
+.articulos {
+    grid-area: articulos;
+}
+
+.articulos div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.paginasNum {
+    grid-area: paginasNum;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.articulos img {
+    width: 180px;
+    height: 220px;
+}
+
+/* marcas.html */
+.presentacionLogosMarcas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.presentacionLogosMarcas img {
+    padding: 60px;
+}

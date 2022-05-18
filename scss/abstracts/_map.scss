@@ -1,0 +1,17 @@
+@import "../variables/variables";
+
+$logo:(
+    ancho: 180px,
+    largo: 160px,
+    espacio-abajo: 30px,
+    espacio-arriba: 15px,
+    flexibilizar: flex,
+    centrar: center,
+);
+
+$barra-nav:(
+    sub-rayar: underline,
+    transparentar: transparent,
+    linea-alrededor: 1px solid #5C5D60,
+    espacio-derecha: 10px,
+);
