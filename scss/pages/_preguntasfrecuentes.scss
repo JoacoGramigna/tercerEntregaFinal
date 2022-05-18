@@ -1,0 +1,13 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+.preguntasDestacadas{
+    @include preguntas-destacadas;
+    div{
+        margin: 20px;
+    }
+}
+
+.parrafoInfo {
+    margin: 60px;
+}

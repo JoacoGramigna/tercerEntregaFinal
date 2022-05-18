@@ -1,0 +1,10 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+.bolsaCarrito{
+    @include bolsa-carrito;
+}
+
+.textoCarrito{
+    @include texto-carrito;
+}

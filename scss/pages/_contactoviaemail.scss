@@ -1,0 +1,27 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+.formularioContactoDatos{
+    @include formulario-contacto;
+}
+
+.datosIzquierda {
+    grid-area: datosIzquierda;
+    input{
+        @include datos-izquierda;
+    }
+}
+
+.datosDerecha {
+    grid-area: datosDerecha;
+    input{
+        @include datos-derecha;
+    }
+}
+
+.botonEnviarCorreo{
+    @include boton-enviar-correo;
+    button{
+        @include edit-boton-enviar-correo;
+    }
+}

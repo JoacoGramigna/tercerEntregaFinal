@@ -1,0 +1,61 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+/* Paginas de venta */
+
+.containerGridnewin {
+    @include container-grid;
+}
+
+.filtroArticulos {
+    @include filtro-articulos;
+    div{
+        margin: 20px 0px 20px 20px;
+    }
+}
+
+.tituloFiltro {
+    background-color: #FBE3D9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.columnaIndumentarias {
+    background-color: #FBE3D9;
+    border-radius: 20px;
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.filtroArticulos p {
+    margin-top: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.articulos {
+    grid-area: articulos;
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+}
+
+.paginasNum {
+    grid-area: paginasNum;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.articulos img {
+    width: 180px;
+    height: 220px;
+}

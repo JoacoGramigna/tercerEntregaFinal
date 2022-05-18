@@ -1,0 +1,44 @@
+@import "../variables/variables";
+@import "../abstracts/mixin";
+
+.containerPagos{
+    @include container-pagos;
+}
+
+.containerGridPagos{
+    @include grid-container-pagos;
+}
+
+.tituloCredito {
+    grid-area: tituloCredito;
+}
+
+.credito {
+    grid-area: credito;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloDebito {
+    grid-area: tituloDebito;
+}
+
+.debito {
+    grid-area: debito;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tituloMercadoPago {
+    grid-area: tituloMercadoPago;
+}
+
+.mercadoPago {
+    grid-area: mercadoPago;
+    display: flex;
+}
+
+.containerPagos img {
+    width: 200px;
+    height: 150px;
+}
